@@ -33,6 +33,7 @@ import com.android.settings.SettingsPreferenceFragment;
 
 public class WolvesDenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+	private static final String KEY_HARDWARE_KEYS = "hardwarekeys_settings";
 
     @Override
     protected int getMetricsCategory() {
@@ -44,7 +45,14 @@ public class WolvesDenSettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.wolvesden);
-
+        
+        // Hide Hardware Keys menu if device doesn't have any
+        PreferenceScreen hardwareKeys = (PreferenceScreen) findPreference(KEY_HARDWARE_KEYS);
+        int deviceKeys = getResources().getInteger(
+                com.android.internal.R.integer.config_deviceHardwareKeys);
+        if (deviceKeys == 0 && hardwareKeys != null) {
+            getPreferenceScreen().removePreference(hardwareKeys);
+        }
     }
 
     @Override
