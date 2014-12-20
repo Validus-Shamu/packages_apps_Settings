@@ -26,10 +26,11 @@
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
+    <string name="reset_string">Reset</string>
+    <string name="reset_title">Reset</string>
     <string name="attention">Attention</string>
     <string name="enabled">Enabled</string>
     <string name="default_string">Default</string>
-    <string name="reset">Reset</string>
     <string name="dlg_dslv_reset_message">Reset all entries to default?</string>
     <string name="dlg_reset_values_message">Reset values to\nAndroid- or Validus default?</string>
     <string name="dlg_reset_colors_message">Reset colors to\nAndroid- or Validus default?</string>

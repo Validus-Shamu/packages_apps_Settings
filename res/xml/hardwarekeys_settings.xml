@@ -39,6 +39,12 @@
                 android:summary="@string/keys_enable_custom_summary" 
                 android:dependency="disable_hardware_keys" />
 
+            <com.android.settings.validus.ButtonBacklightBrightness
+                android:key="button_backlight"
+                android:title="@string/button_backlight_title"
+                android:dialogTitle="@string/button_backlight_title"
+                android:persistent="false" />
+
         </PreferenceCategory>
 
         <PreferenceCategory
