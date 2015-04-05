@@ -86,6 +86,21 @@
 
     </dashboard-category>
 
+    <!-- Validus -->
+    <dashboard-category
+            android:id="@+id/thevoid_section"
+            android:title="@string/header_category_thevoid" >
+
+        <!-- The Void -->
+        <dashboard-tile
+                android:id="@+id/thevoid_settings"
+                android:title="@string/thevoid_settings_title"
+                android:fragment="com.android.settings.validus.TheVoidSettings"
+                android:icon="@drawable/ic_the_void_settings"
+                />
+    
+    </dashboard-category>
+
     <!-- DEVICE -->
     <dashboard-category
             android:id="@+id/device_section"
