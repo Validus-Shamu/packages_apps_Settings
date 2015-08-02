@@ -271,4 +271,7 @@
     <!-- Icon pack picker -->
     <dimen name="alert_dialog_padding_material">20dp</dimen>
 
+    <!-- Dashboard Category Margin Bottom -->
+    <dimen name="dashboard_category_margin_bottom">8dip</dimen>
+
 </resources>
