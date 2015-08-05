@@ -55,7 +55,6 @@ import com.android.settings.validus.statusbar.ClockCategory;
 import com.android.settings.validus.statusbar.CarrierlabelCategory;
 import com.android.settings.validus.statusbar.BatteryCategory;
 import com.android.settings.validus.statusbar.IconsCategory;
-import com.android.settings.validus.statusbar.ExtrasCategory;
 import com.android.settings.validus.PagerSlidingTabStrip;
 
 import java.util.ArrayList;
@@ -115,7 +114,6 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
             frags[2] = new IconsCategory();
             frags[3] = new CarrierlabelCategory();
             frags[4] = new TrafficCategory();
-            //frags[4] = new ExtrasCategory();
         }
 
         @Override
@@ -142,7 +140,6 @@ public class StatusbarHolder extends SettingsPreferenceFragment {
                     getString(R.string.icon_category),
                     getString(R.string.carrier_category),
                     getString(R.string.traffic_category)};
-                    //getString(R.string.extra_category)};
         return titleString;
     }
 }
