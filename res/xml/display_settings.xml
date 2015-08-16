@@ -174,7 +174,5 @@
                 android:summary="@string/wakeup_when_plugged_unplugged_summary"
                 android:defaultValue="true"
                 android:persistent="false" />
-
          </PreferenceCategory>
-
 </PreferenceScreen>
