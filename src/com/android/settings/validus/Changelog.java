@@ -58,6 +58,7 @@ public class Changelog extends Fragment {
 
             inputReader = new FileReader(CHANGELOG_PATH);
             while ((numRead = inputReader.read(tmp)) >= 0) {
+                
                 data.append(tmp, 0, numRead);
             }
 //            text = data.toString();
@@ -75,14 +76,14 @@ public class Changelog extends Fragment {
 	SpannableStringBuilder sb = new SpannableStringBuilder(data);
         Matcher m = p.matcher(data);
         while (m.find()){
-          sb.setSpan(new ForegroundColorSpan(Color.rgb(96,125,139)),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(158,158,20)),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
           sb.setSpan(new StyleSpan(Typeface.BOLD),m.start(1),m.end(1),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-          sb.setSpan(new ForegroundColorSpan(Color.rgb(69,90,100)),m.start(3), m.end(3), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(20,158,20)),m.start(3), m.end(3), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         }
         m = p2.matcher(data);
         while (m.find()){
           sb.setSpan(new StyleSpan(Typeface.BOLD),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-          sb.setSpan(new ForegroundColorSpan(Color.rgb(33,39,43)),m.start(1),m.end(1),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(20,40,158)),m.start(1),m.end(1),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         }
         m = p3.matcher(data);
         while (m.find()){
