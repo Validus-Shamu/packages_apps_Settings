@@ -1169,4 +1169,7 @@
     <string name="qs_set_animation_style">Animation is set to %1$s</string>
     <string name="qs_set_animation_duration">Animation duration is set to %1$s</string>
 
+    <string name="equalizer_settings_title">Equalizer</string>
+    <string name="kernel_settings_title">Kernel</string>
+
 </resources>
