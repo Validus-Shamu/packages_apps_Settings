@@ -66,6 +66,9 @@
     <string name="validus_dash_settings">Dashboard</string>
     <string name="header_category_personalization">Personalization</string>
 
+    <!-- Google -->
+    <string name="google_title">Google</string>
+
     <!-- UBER GCC version info -->
     <string name="uber_android">GCC android</string>
     <string name="uber_android_default">Unknown</string>
