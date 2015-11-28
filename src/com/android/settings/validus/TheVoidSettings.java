@@ -8,7 +8,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
 
-public class SystemSettings extends SettingsPreferenceFragment {
+public class TheVoidSettings extends SettingsPreferenceFragment {
 
     @Override
     protected int getMetricsCategory() {
