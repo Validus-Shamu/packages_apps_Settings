@@ -5,4 +5,34 @@
     android:title="@string/thevoid_settings_title"
     settings:keywords="@string/keywords_validus" >
 
+    <PreferenceScreen
+       android:key="status_bar"
+       android:fragment="com.android.settings.validus.statusbar.StatusbarHolder"
+       android:title="@string/statusbar_bar_title" 
+       android:summary="@string/statusbar_bar_summary" />
+
+    <PreferenceScreen
+       android:key="navigation"
+       android:fragment="com.android.settings.validus.navigation.NavigationHolder"
+       android:title="@string/navigation_title" 
+       android:summary="@string/navigation_summary" />
+
+    <PreferenceScreen
+       android:key="buttons"
+       android:fragment="com.android.settings.validus.buttons.ButtonsHolder"
+       android:title="@string/buttons_title" 
+       android:summary="@string/buttons_summary" />
+
+    <PreferenceScreen
+       android:key="lockscreen"
+       android:fragment="com.android.settings.validus.lockscreen.LockscreenHolder"
+       android:title="@string/lockscreen_title" 
+       android:summary="@string/lockscreen_summary" />
+
+    <PreferenceScreen
+       android:key="advanced"
+       android:fragment="com.android.settings.validus.advanced.AdvancedHolder"
+       android:title="@string/advanced_title" 
+       android:summary="@string/advanced_summary" />
+
 </PreferenceScreen>
