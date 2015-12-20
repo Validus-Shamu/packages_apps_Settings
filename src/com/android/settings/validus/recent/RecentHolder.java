@@ -53,6 +53,7 @@ import com.android.internal.logging.MetricsLogger;
 
 import com.android.settings.validus.recent.RecentCategory;
 import com.android.settings.validus.PagerSlidingTabStrip;
+import com.android.settings.validus.recent.SlimRecentPanel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -106,7 +107,8 @@ public class RecentHolder extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new RecentCategory();
+            frags[0] = new SlimRecentPanel();
+            frags[1] = new RecentCategory();
         }
 
         @Override
@@ -128,6 +130,7 @@ public class RecentHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
+                    getString(R.string.use_slim_recents_title),
                     getString(R.string.recent_category)};
         return titleString;
     }
