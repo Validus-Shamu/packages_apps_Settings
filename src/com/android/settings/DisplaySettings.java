@@ -60,6 +60,8 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.android.settings.util.Helpers;
+
 public class DisplaySettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, OnPreferenceClickListener, Indexable {
     private static final String TAG = "DisplaySettings";
@@ -488,6 +490,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 final UiModeManager uiManager = (UiModeManager) getSystemService(
                         Context.UI_MODE_SERVICE);
                 uiManager.setNightMode(value);
+                Helpers.restartSystemUI();                  
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist night mode setting", e);
             }
