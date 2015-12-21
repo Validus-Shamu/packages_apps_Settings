@@ -52,6 +52,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
 
 import com.android.settings.validus.buttons.PowermenuCategory;
+import com.android.settings.validus.buttons.PowerMenuFragment;
 import com.android.settings.validus.buttons.VolumeCategory;
 import com.android.settings.validus.PagerSlidingTabStrip;
 
