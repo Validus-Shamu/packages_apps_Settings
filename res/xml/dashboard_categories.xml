@@ -78,7 +78,7 @@
 
         <!-- The Wolves Den-->
         <dashboard-tile
-                android:id="@+id/Wolvesden"
+                android:id="@+id/wolvesden_settings"
                 android:title="@string/wolvesden_settings_title"
                 android:fragment="com.android.settings.validus.WolvesDenSettings"
                 android:icon="@drawable/ic_wolvesden_settings"
