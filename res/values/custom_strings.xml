@@ -880,4 +880,12 @@
     <string name="lockscreen_colors_reset_message">Are you sure you want to reset these colors to default?</string>
     <string name="yes">YES</string>
 
+    <!-- Statusbar Validus logo -->
+
+    <string name="validus_logo">Validus logo</string>
+    <string name="status_bar_validus_logo_title">Validus logo</string>
+    <string name="status_bar_validus_logo_summary">Enable to show Validus logo on the left side of statusbar</string>
+    <string name="status_bar_validus_logo_color">Validus logo color</string>
+
+
 </resources>
