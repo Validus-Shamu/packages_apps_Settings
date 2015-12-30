@@ -51,9 +51,15 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
 
+<<<<<<< HEAD:src/com/android/settings/validus/navigation/NavigationHolder.java
 import com.android.settings.validus.navigation.NavigationButtonsCategory;
 import com.android.settings.validus.navigation.NavigationDimenCategory;
 import com.android.settings.validus.PagerSlidingTabStrip;
+=======
+import com.android.settings.aosip.navigation.NavigationButtonsCategory;
+import com.android.settings.aosip.navigation.NavigationExtrasCategory;
+import com.android.settings.aosip.PagerSlidingTabStrip;
+>>>>>>> b43dde2... Add cm navbar:src/com/android/settings/aosip/navigation/NavigationHolder.java
 
 import java.util.ArrayList;
 import java.util.List;
@@ -108,7 +114,7 @@ public class NavigationHolder extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new NavigationButtonsCategory();
-            frags[1] = new NavigationDimenCategory();
+            frags[1] = new NavigationExtrasCategory();
         }
 
         @Override
@@ -131,7 +137,7 @@ public class NavigationHolder extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.navigationbuttons_category),
-                    getString(R.string.navigation_dimen_category)};
+                    getString(R.string.navigation_extras_category)};
         return titleString;
     }
 }
