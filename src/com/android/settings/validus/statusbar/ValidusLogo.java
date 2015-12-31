@@ -21,6 +21,8 @@ import android.content.res.Resources;
 import android.database.ContentObserver;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.UserHandle;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
@@ -39,10 +41,11 @@ import net.margaritov.preference.colorpicker.ColorPickerPreference;
 public class ValidusLogo extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String TAG = "ValidusLogo";
-
     private static final String KEY_VALIDUS_LOGO_COLOR = "status_bar_validus_logo_color";
+    private static final String KEY_VALIDUS_LOGO_STYLE = "status_bar_validus_logo_style";
 
     private ColorPickerPreference mValidusLogoColor;
+    private ListPreference mValidusLogoStyle;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,6 +54,14 @@ public class ValidusLogo extends SettingsPreferenceFragment implements OnPrefere
         addPreferencesFromResource(R.xml.validus_logo);
 
         PreferenceScreen prefSet = getPreferenceScreen();
+
+            mValidusLogoStyle = (ListPreference) findPreference(KEY_VALIDUS_LOGO_STYLE);
+            int validusLogoStyle = Settings.System.getIntForUser(resolver,
+                    Settings.System.STATUS_BAR_VALIDUS_LOGO_STYLE, 0,
+                    UserHandle.USER_CURRENT);
+            mValidusLogoStyle.setValue(String.valueOf(validusLogoStyle));
+            mValidusLogoStyle.setSummary(mValidusLogoStyle.getEntry());
+            mValidusLogoStyle.setOnPreferenceChangeListener(this);
 
         // Validus logo color
         mValidusLogoColor =
@@ -73,13 +84,22 @@ public class ValidusLogo extends SettingsPreferenceFragment implements OnPrefere
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_VALIDUS_LOGO_COLOR, intHex);
             return true;
+            } else if (preference == mValidusLogoStyle) {
+                int validusLogoStyle = Integer.valueOf((String) newValue);
+                int index = mValidusLogoStyle.findIndexOfValue((String) newValue);
+                Settings.System.putIntForUser(
+                        resolver, Settings.System.STATUS_BAR_VALIDUS_LOGO_STYLE, validusLogoStyle,
+                        UserHandle.USER_CURRENT);
+                mValidusLogoStyle.setSummary(
+                        mValidusLogoStyle.getEntries()[index]);
+                return true;
         }
         return false;
     }
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.OWLSNEST;
+        return MetricsLogger.THE_WOLF;
     }
 
     @Override
