@@ -138,6 +138,12 @@
                 android:summary="@string/dashboard_tileview_double_lines_summary"
                 android:defaultValue="false" />
 
+        <ListPreference
+                android:key="dashboard_font_style"
+                android:entries="@array/status_bar_font_style_entries"
+                android:entryValues="@array/status_bar_font_style_values"
+                android:title="@string/status_bar_weather_font_style_title" />
+
         <com.android.settings.validus.seekbar.SeekBarPreference
                 android:key="settings_category_text_size"
                 android:title="@string/dash_category_text_size"
