@@ -48,17 +48,11 @@
             <intent android:action="android.settings.SHOW_MANUAL" />
         </PreferenceScreen>
 
-        <!-- Legal Information -->
-        <PreferenceScreen
-                android:key="container"
-                android:title="@string/legal_information"
-                android:fragment="com.android.settings.LegalSettings" />
-
-        <PreferenceScreen
-                android:key="regulatory_info"
-                android:title="@string/regulatory_information">
-            <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
-        </PreferenceScreen>
+        <!-- ValidusOs firmware version -->
+        <Preference android:key="validus_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/validus_version_title"
+                android:summary="@string/validus_version_default"/>
 
         <!-- Feedback on the device -->
         <PreferenceScreen android:key="device_feedback"
@@ -112,5 +106,17 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/selinux_status"
                 android:summary="@string/selinux_status_enforcing"/>
+
+        <!-- Legal Information -->
+        <PreferenceScreen
+                android:key="container"
+                android:title="@string/legal_information"
+                android:fragment="com.android.settings.LegalSettings" />
+
+        <PreferenceScreen
+                android:key="regulatory_info"
+                android:title="@string/regulatory_information">
+            <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
+        </PreferenceScreen>
 
 </PreferenceScreen>
