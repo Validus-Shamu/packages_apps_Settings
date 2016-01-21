@@ -41,7 +41,8 @@
         <Preference android:key="validus_version"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/validus_version_title"
-                android:summary="@string/validus_version_default"/>
+                android:summary="@string/validus_version_default"
+		android:icon="@drawable/ic_wolf" />
 
         <!-- Feedback on the device -->
         <PreferenceScreen android:key="device_feedback"
