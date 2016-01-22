@@ -207,7 +207,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         } else {
             removePreference(KEY_AUTO_ROTATE);
         }
-
+    }
+    
     private static boolean allowAllRotations(Context context) {
         return Resources.getSystem().getBoolean(
                 com.android.internal.R.bool.config_allowAllRotations);
