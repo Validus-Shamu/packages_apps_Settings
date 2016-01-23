@@ -19,7 +19,14 @@
 
         <PreferenceScreen android:key="validus_logo"
                           android:enabled="false"
-                          android:layout="@layout/validus_logo_row" />		
+                          android:layout="@layout/validus_logo_row" />
+
+        <!-- ValidusOs firmware version -->
+        <Preference android:key="validus_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/validus_version_title"
+                android:summary="@string/validus_version_default"
+		android:icon="@drawable/ic_wolf" />
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
@@ -29,13 +36,6 @@
                     android:targetPackage="com.android.settings"
                     android:targetClass="com.android.settings.deviceinfo.Status" />
         </PreferenceScreen>
-
-        <!-- ValidusOs firmware version -->
-        <Preference android:key="validus_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/validus_version_title"
-                android:summary="@string/validus_version_default"
-		android:icon="@drawable/ic_wolf" />
 
         <!-- Manual -->
         <PreferenceScreen
