@@ -72,12 +72,19 @@
 
     </dashboard-category>
 
+        <!-- PERSONALIZATION -->
+        <dashboard-category
+            android:id="@+id/personalization_section"
+            android:title="@string/header_category_personalization" >
+
         <dashboard-tile
  		android:id="@+id/daynight"
                 android:icon="@drawable/ic_settings_themes"
  		android:fragment="com.android.settings.validus.DayNightSettings"
  		android:title="@string/daynight_title"
 		/>
+
+    </dashboard-category>
 
     <!-- DEVICE -->
     <dashboard-category

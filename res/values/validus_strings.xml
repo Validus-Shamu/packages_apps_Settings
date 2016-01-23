@@ -14,6 +14,9 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- ValidusOs settings screens -->
+    <string name="header_category_personalization">Personalization</string>
+
     <string name="daynight_title">GZR theme</string>
     <string name="daynight_summary">Validus theme options</string>
     <string name="daynight_header_title">GZR theme</string>
