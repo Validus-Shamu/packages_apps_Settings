@@ -14,6 +14,23 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="help">Help</string>
+    <string name="add">Add</string>
+    <string name="help">Help</string>
+    <string name="attention">Attention</string>
+    <string name="enabled">Enabled</string>
+    <string name="default_string">Default</string>
+    <string name="choose_app">Choose application</string>
+    <string name="reset_message">Reset all entries to default?</string>
+
+    <!-- The Void  -->
+    <string name="header_category_thevoid">Excision</string>
+    <string name="thevoid_settings_title">The Void</string>
+    <string name="keywords_validus">Embrace the Darkness</string>
+    
     <!-- About phone screen, ValidusOs version -->
     <string name="validus_version_title">ValidusOs version</string>
     <string name="validus_version_default">Unknown</string>
@@ -23,6 +40,18 @@
 
     <!-- ValidusOs settings screens -->
     <string name="header_category_personalization">Personalization</string>
+    <string name="navigation_settings_title">Navigation</string>
+    
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>
+
 
     <string name="daynight_title">GZR theme settings</string>
     <string name="daynight_summary">Validus theme options</string>
@@ -45,21 +74,6 @@
     <string name="dashboard_tileview_double_lines_title">Dashboard tile view title</string>
     <string name="dashboard_tileview_double_lines_summary_on">Show dashboard tile titles in 1 line</string>
     <string name="dashboard_tileview_double_lines_summary_off">Show dashboard tile titles in 2 lines</string>
-
-    <!-- General strings -->
-    <string name="ok">OK</string>
-    <string name="reset">Reset</string>
-    <string name="help">Help</string>
-    <string name="add">Add</string>
-    <string name="help">Help</string>
-    <string name="attention">Attention</string>
-    <string name="enabled">Enabled</string>
-    <string name="default_string">Default</string>
-    <string name="choose_app">Choose application</string>
-    <string name="reset_message">Reset all entries to default?</string>
-
-    <!-- Slim settings screens -->
-    <string name="navigation_settings_title">Navigation</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -264,4 +278,18 @@
     <string name="nav_button_color_mode_dialog_title">Colorize</string>
     <string name="nav_button_color_mode_summary">Change the navigation bar button color mode</string>
     <string name="navigation_bar_glow_tint_title">Button glow color</string>
+
+    <!-- Battery Bar -->
+    <string name="battery_bar_summary">Battery Bar options for status and nav bar</string>
+    <string name="battery_icon">Battery icon style</string>
+    <string name="battery_not_title">Battery icon in notifications</string>
+    <string name="battery_not_summary">Battery icon will show up where the clear all button shows up</string>
+    <string name="battery_bar_location">Battery bar location</string>
+    <string name="battery_bar_color">Battery bar color</string>
+    <string name="battery_bar">Battery bar</string>
+    <string name="battery_bar_style_title">Battery bar style</string>
+    <string name="battery_bar_thickness_title">Battery bar thickness</string>
+    <string name="battery_bar_animate_title">Charging animation</string>
+    <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion.</string>
+
 </resources>

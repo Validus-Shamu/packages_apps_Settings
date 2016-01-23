@@ -1800,7 +1800,7 @@
                   android:excludeFromRecents="true"
                   android:exported="true"
                   android:permission="android.permission.MANAGE_USB"
-                  android:theme="@style/Theme.SettingsDialog">
+                  android:theme="@*android:style/Theme.Material.DayNight.Dialog.Alert">
         </activity>
 
         <activity android:name=".bluetooth.RequestPermissionHelperActivity"
@@ -2286,6 +2286,10 @@
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                        android:resource="@id/notification_settings" />
         </activity>
+
+        <!-- BUILD TWEAKS START -->
+        <activity android:name=".validus.TheVoidSettings" />
+        <!-- BUILD TWEAKS END -->
 
         <activity android:name="Settings$NotificationSettingsActivity"
                 android:label="@string/notification_settings"
