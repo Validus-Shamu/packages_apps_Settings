@@ -17,9 +17,9 @@
     <!-- ValidusOs settings screens -->
     <string name="header_category_personalization">Personalization</string>
 
-    <string name="daynight_title">GZR theme</string>
+    <string name="daynight_title">GZR theme settings</string>
     <string name="daynight_summary">Validus theme options</string>
-    <string name="daynight_header_title">GZR theme</string>
+    <string name="daynight_header_title">GZR theme settings</string>
 
     <!-- Dashboard columns -->
     <string name="dashboard_columns_title">Dashboard Columns</string>
