@@ -14,12 +14,23 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- About phone screen, ValidusOs version -->
+    <string name="validus_version_title">ValidusOs version</string>
+    <string name="validus_version_default">Unknown</string>
+    <!-- About phone screen, build date of ROM -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">Unknown</string>
+
     <!-- ValidusOs settings screens -->
     <string name="header_category_personalization">Personalization</string>
 
     <string name="daynight_title">GZR theme settings</string>
     <string name="daynight_summary">Validus theme options</string>
     <string name="daynight_header_title">GZR theme settings</string>
+
+    <!-- Themes Settings -->
+    <!-- Settings main menu entry -->
+    <string name="themes_settings_title">CM themes</string>
 
     <!-- Dashboard columns -->
     <string name="dashboard_columns_title">Dashboard Columns</string>
