@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.preference.ListPreference;
+import android.provider.Settings;
 import android.util.Log;
 import android.util.DisplayMetrics;
 
