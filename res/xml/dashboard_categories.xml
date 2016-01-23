@@ -79,7 +79,7 @@
 
         <dashboard-tile
  		android:id="@+id/daynight"
-                android:icon="@drawable/ic_settings_themes"
+                android:icon="@drawable/ic_daynight"
  		android:fragment="com.android.settings.validus.DayNightSettings"
  		android:title="@string/daynight_title"
 		/>
