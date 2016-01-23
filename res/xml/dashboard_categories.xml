@@ -77,20 +77,6 @@
             android:id="@+id/personalization_section"
             android:title="@string/header_category_personalization" >
 
-        <dashboard-tile
- 		android:id="@+id/daynight"
-                android:icon="@drawable/ic_daynight"
- 		android:fragment="com.android.settings.validus.DayNightSettings"
- 		android:title="@string/daynight_title"
-		/>
-
-    </dashboard-category>
-
-    <!-- Validus -->
-    <dashboard-category
-            android:id="@+id/thevoid_section"
-            android:title="@string/header_category_thevoid" >
-
         <!-- The Void -->
         <dashboard-tile
                 android:id="@+id/thevoid_settings"
@@ -98,7 +84,15 @@
                 android:fragment="com.android.settings.validus.TheVoidSettings"
                 android:icon="@drawable/ic_the_void_settings"
                 />
-    
+
+        <!--  Tesla Theme switch -->
+        <dashboard-tile
+ 		android:id="@+id/daynight"
+                android:icon="@drawable/ic_daynight"
+ 		android:fragment="com.android.settings.validus.DayNightSettings"
+ 		android:title="@string/daynight_title"
+		/>
+
     </dashboard-category>
 
     <!-- DEVICE -->
