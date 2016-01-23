@@ -2287,12 +2287,11 @@
                        android:resource="@id/notification_settings" />
         </activity>
 
-        <activity android:name="Settings$NotificationSettingsActivity"
-        
         <!-- BUILD TWEAKS START -->
         <activity android:name=".validus.TheVoidSettings" />
         <!-- BUILD TWEAKS END -->
 
+        <activity android:name="Settings$NotificationSettingsActivity"
                 android:label="@string/notification_settings"
                 android:exported="true"
                 android:taskAffinity="">
