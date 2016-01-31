@@ -18,7 +18,9 @@ package com.android.settings.slim.fragments;
 
 import android.os.Bundle;
 import android.preference.Preference;
+import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
+import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,14 +30,12 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
 
-public class NavbarButtonFragment extends SettingsPreferenceFragment implements
-        OnPreferenceChangeListener {
+public class PieButtonFragment extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        addPreferencesFromResource(R.xml.navbar_button_fragment);
+        addPreferencesFromResource(R.xml.pie_button_fragment);
     }
 
     @Override
@@ -50,11 +50,6 @@ public class NavbarButtonFragment extends SettingsPreferenceFragment implements
             list.setPadding(0, paddingTop, 0, paddingBottom);
         }
         return view;
-    }
-
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        return false;
     }
 
     @Override
