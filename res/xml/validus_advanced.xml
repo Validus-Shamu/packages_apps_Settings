@@ -35,5 +35,17 @@
         android:fragment="com.android.settings.benzo.AppCircleBar"
         android:title="@string/app_circle_bar_title" />
 
+    <PreferenceScreen
+        android:key="gesture_anywhere"
+        android:title="@string/gestureanywhere_category"
+        android:fragment="com.android.settings.benzo.gestureanywhere.GestureAnywhereSettings" />
+
+         <PreferenceScreen
+            android:key="multitwindow"
+            android:fragment="com.android.settings.validus.advanced.MultiWindow"
+            android:layout="@layout/aosip_multiwindow"
+            android:title="@string/multiwindow_settings_title" 
+            />
+
 </PreferenceScreen>
 
