@@ -43,7 +43,6 @@
          <PreferenceScreen
             android:key="multitwindow"
             android:fragment="com.android.settings.validus.advanced.MultiWindow"
-            android:layout="@layout/aosip_multiwindow"
             android:title="@string/multiwindow_settings_title" 
             />
 
