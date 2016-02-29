@@ -100,6 +100,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             = "camera_double_tap_power_gesture";
     private static final String KEY_WAKEUP_WHEN_PLUGGED_UNPLUGGED = "wakeup_when_plugged_unplugged";
     private static final String KEY_WAKEUP_CATEGORY = "category_wakeup_options";
+    private static final String KEY_PROXIMITY_WAKE = "proximity_on_wake";
+
+    private static final String ROTATION_LOCKSCREEN = "Lockscreen";
 
     private static final String SETTINGS_TITLE_TEXT_SIZE  = "settings_title_text_size";
     private static final String SETTINGS_CATEGORY_TEXT_SIZE  = "settings_category_text_size";
@@ -168,6 +171,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         final ContentResolver resolver = activity.getContentResolver();
 
         addPreferencesFromResource(R.xml.display_settings);
+        
+        mDisplayRotationPreference = (PreferenceScreen) findPreference(KEY_DISPLAY_ROTATION);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
@@ -340,6 +345,15 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             if (screenshotPrefs != null && mScreenshotCropBehaviorPreference != null) {
                 screenshotPrefs.removePreference(mScreenshotCropBehaviorPreference);
             }
+        }
+
+	mWakeUpOptions = (PreferenceCategory) prefSet.findPreference(KEY_WAKEUP_CATEGORY);
+
+        boolean proximityCheckOnWake = getResources().getBoolean(
+                com.android.internal.R.bool.config_proximityCheckOnWake);
+        if (!proximityCheckOnWake) {
+            mWakeUpOptions.removePreference(findPreference(KEY_PROXIMITY_WAKE));
+            Settings.System.putInt(resolver, Settings.System.PROXIMITY_ON_WAKE, 0);
         }
 
     }
