@@ -55,6 +55,7 @@ public class ValidusLogo extends SettingsPreferenceFragment implements OnPrefere
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
+            ContentResolver resolver = mContext.getContentResolver();
             mValidusLogoStyle = (ListPreference) findPreference(KEY_VALIDUS_LOGO_STYLE);
             int validusLogoStyle = Settings.System.getIntForUser(resolver,
                     Settings.System.STATUS_BAR_VALIDUS_LOGO_STYLE, 0,
@@ -76,6 +77,7 @@ public class ValidusLogo extends SettingsPreferenceFragment implements OnPrefere
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+            ContentResolver resolver = mContext.getContentResolver();
         if (preference == mValidusLogoColor) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));
