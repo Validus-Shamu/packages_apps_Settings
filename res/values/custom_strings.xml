@@ -828,6 +828,8 @@
 
         <!-- Navigation Bar -->
     <string name="navigation_category">Navigation Bar</string>
+    <string name="navbarbar_title">System navigation</string>
+    <string name="navbar_summary">Navigation bar options (fling,pulse,height,width etc.)</string>
     <string name="navbar_interface_title">Interface</string>
     <string name="navbar_size">Bar size</string>
     <string name="navbar_mode">Navigation mode</string>
@@ -962,7 +964,6 @@
     <string name="fling_pulse_color">Pulse color</string>
     <string name="eos_fling_lavalamp_title">Turn on Lava Lamp</string>
     <string name="eos_fling_lavalamp_summary">Pulse animates a smooth lava lamp style color blend</string>
-</resources>
 
     <!-- Blacklist preferences -->
     <string name="app_security_title">Privacy</string>
