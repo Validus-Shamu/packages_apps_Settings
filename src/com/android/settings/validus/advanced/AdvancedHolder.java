@@ -107,8 +107,8 @@ public class AdvancedHolder extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new GestureAnywhereSettings();
-            //frags[1] = new AppsidebarCategory();
+            frags[0] = new AdvancedSettings();
+            //frags[1] = new ExpandedDesktopPreferenceFragment();
         }
 
         @Override
@@ -130,8 +130,8 @@ public class AdvancedHolder extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                    getString(R.string.gestureanywhere_category)};
-                    //getString(R.string.sidebar_category)};
+                    //getString(R.string.gestureanywhere_category),
+                    getString(R.string.advanced_title)};
         return titleString;
     }
 }
