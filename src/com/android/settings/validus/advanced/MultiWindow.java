@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.aosip.advanced;
+package com.android.settings.validus.advanced;
 
 import android.content.Context;
 import android.content.ContentResolver;
