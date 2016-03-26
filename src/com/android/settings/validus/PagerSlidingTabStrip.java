@@ -139,9 +139,9 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 
 		a = context.obtainStyledAttributes(attrs, R.styleable.PagerSlidingTabStrip);
 
-		indicatorColor = context.getResources().getColor(R.color.owlsnest_indicator_color);
-		underlineColor = context.getResources().getColor(R.color.owlsnest_underline_color);
-		dividerColor = context.getResources().getColor(R.color.owlsnest_divider_color);
+		indicatorColor = context.getResources().getColor(R.color.wolvesden_indicator_color);
+		underlineColor = context.getResources().getColor(R.color.wolvesden_underline_color);
+		dividerColor = context.getResources().getColor(R.color.wolvesden_divider_color);
 		indicatorHeight = a.getDimensionPixelSize(R.styleable.PagerSlidingTabStrip_pstsIndicatorHeight, indicatorHeight);
 		underlineHeight = a.getDimensionPixelSize(R.styleable.PagerSlidingTabStrip_pstsUnderlineHeight, underlineHeight);
 		dividerPadding = a.getDimensionPixelSize(R.styleable.PagerSlidingTabStrip_pstsDividerPadding, dividerPadding);

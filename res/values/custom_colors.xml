@@ -7,10 +7,10 @@
     <!-- Gesture Anywhere -->
     <color name="ga_gesture_color">@android:color/holo_blue_light</color>
 
-    <!-- Owlsnest tab -->
-    <color name="owlsnest_tab_text_color">@color/text_color_white</color>
-    <color name="owlsnest_indicator_color">@color/owlsnest_tab_text_color</color>
-    <color name="owlsnest_underline_color">@color/theme_accent</color>
-    <color name="owlsnest_divider_color">@color/owlsnest_underline_color</color>
+    <!-- wolvesden tab -->
+    <color name="wolvesden_tab_text_color">@color/text_color_white</color>
+    <color name="wolvesden_indicator_color">@color/wolvesden_tab_text_color</color>
+    <color name="wolvesden_underline_color">@color/theme_accent</color>
+    <color name="wolvesden_divider_color">@color/wolvesden_underline_color</color>
 </resources>
 
