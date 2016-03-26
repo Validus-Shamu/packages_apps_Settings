@@ -51,16 +51,10 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
 
-<<<<<<< HEAD:src/com/android/settings/validus/navigation/NavigationHolder.java
 import com.android.settings.validus.navigation.NavigationButtonsCategory;
 import com.android.settings.validus.navigation.NavigationDimenCategory;
+import com.android.settings.validus.navigation.NavigationDimenCategory;
 import com.android.settings.validus.PagerSlidingTabStrip;
-=======
-import com.android.settings.aosip.navigation.NavigationButtonsCategory;
-import com.android.settings.aosip.navigation.NavigationDimenCategory;
-import com.android.settings.aosip.navigation.NavigationExtrasCategory;
-import com.android.settings.aosip.PagerSlidingTabStrip;
->>>>>>> b43dde2... Add cm navbar:src/com/android/settings/aosip/navigation/NavigationHolder.java
 
 import java.util.ArrayList;
 import java.util.List;

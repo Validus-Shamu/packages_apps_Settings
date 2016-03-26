@@ -1,4 +1,4 @@
-package com.android.settings.aosip.navigation;
+package com.android.settings.validus.navigation;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -40,7 +40,7 @@ public class NavigationDimenCategory extends SettingsPreferenceFragment implemen
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.OWLSNEST;
+        return MetricsLogger.THE_WOLF;
     }
 
     @Override
@@ -48,7 +48,7 @@ public class NavigationDimenCategory extends SettingsPreferenceFragment implemen
         super.onCreate(savedInstanceState);
 
         // Load the preferences from an XML resource
-        addPreferencesFromResource(R.xml.aosip_dimen);
+        addPreferencesFromResource(R.xml.validus_dimen);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
