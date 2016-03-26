@@ -43,7 +43,7 @@ import android.view.IWindowManager;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.android.settings.aosip.seekbar.SeekBarPreference;
+import com.android.settings.validus.seekbar.SeekBarPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
