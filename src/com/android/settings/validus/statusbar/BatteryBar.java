@@ -1,4 +1,4 @@
-package com.android.settings.aosip.statusbar;
+package com.android.settings.validus.statusbar;
 
 import android.app.ActivityManager;
 import android.content.ContentResolver;
