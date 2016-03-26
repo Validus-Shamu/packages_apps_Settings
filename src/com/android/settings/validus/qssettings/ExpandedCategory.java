@@ -54,11 +54,9 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
     private static final String TAG = "StatusBar";
     private static final String PRE_QUICK_PULLDOWN = "quick_pulldown";
     private static final String PREF_QS_TRANSPARENT_HEADER = "qs_transparent_header";
-    private static final String PREF_CUSTOM_HEADER_DEFAULT = "status_bar_custom_header_default";
 
     private ListPreference mQuickPulldown;
     private SeekBarPreference mQSHeaderAlpha;
-    private SwitchPreference mCustomHeader; 
 
     private final Configuration mCurConfig = new Configuration();
 
@@ -86,12 +84,6 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
                 Settings.System.QS_TRANSPARENT_HEADER, 255);
         mQSHeaderAlpha.setValue(qSHeaderAlpha / 1);
         mQSHeaderAlpha.setOnPreferenceChangeListener(this);
-
-        // Status bar custom header hd
-        mCustomHeader = (SwitchPreference) findPreference(PREF_CUSTOM_HEADER_DEFAULT);
-        mCustomHeader.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.STATUS_BAR_CUSTOM_HEADER_DEFAULT, 0) == 1));
-        mCustomHeader.setOnPreferenceChangeListener(this);
 
     }
 
@@ -130,11 +122,6 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
                 Settings.System.putInt(getActivity().getContentResolver(),
                         Settings.System.QS_TRANSPARENT_HEADER, alpha * 1);
                 return true;
-        } else if (preference == mCustomHeader) {
-           boolean value = (Boolean) newValue;
-           Settings.System.putInt(resolver,
-                   Settings.System.STATUS_BAR_CUSTOM_HEADER_DEFAULT, value ? 1 : 0);
-            return true;
         }
          return false;
     }
