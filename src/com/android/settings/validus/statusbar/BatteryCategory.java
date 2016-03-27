@@ -53,7 +53,7 @@ public class BatteryCategory extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.validus_battery);
+        addPreferencesFromResource(R.xml.gz_battery);
 
         ContentResolver resolver = getActivity().getContentResolver();
 

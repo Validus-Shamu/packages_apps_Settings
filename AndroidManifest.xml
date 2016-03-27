@@ -2579,7 +2579,7 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.solo.NavbarSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@id/owlsnest_settings" />
+                android:resource="@id/wolvesden_settings" />
         </activity>
 
         <!-- Navigation settings activity. -->
@@ -2593,7 +2593,7 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="ccom.android.settings.solo.SmartbarSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@id/owlsnest_settings" />
+                android:resource="@id/wolvesden_settings" />
         </activity>
 
         <!-- Navigation settings activity. -->
@@ -2607,7 +2607,7 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.solo.FlingSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@id/owlsnest_settings" />
+                android:resource="@id/wolvesden_settings" />
         </activity>
 
        <!-- System action picker -->

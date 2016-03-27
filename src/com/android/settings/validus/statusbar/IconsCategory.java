@@ -84,7 +84,7 @@ public class IconsCategory extends SettingsPreferenceFragment implements
             prefs.removeAll();
         }
 
-        addPreferencesFromResource(R.xml.validus_icons);
+        addPreferencesFromResource(R.xml.gz_icons);
         mResolver = getActivity().getContentResolver();
 
         int intColor;
@@ -266,7 +266,7 @@ public class IconsCategory extends SettingsPreferenceFragment implements
                             getOwner().refreshSettings();
                         }
                     })
-                    .setPositiveButton(R.string.dlg_reset_aosip,
+                    .setPositiveButton(R.string.dlg_reset_validus,
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             Settings.System.putInt(getOwner().mResolver,

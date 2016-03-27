@@ -43,7 +43,7 @@ public class WolvesDenSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.wolvesden_settings);
+        addPreferencesFromResource(R.xml.wolvesden);
 
     }
 

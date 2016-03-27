@@ -54,7 +54,7 @@ public class SlimRecentPanel extends SettingsPreferenceFragment implements Dialo
 
     @Override
      protected int getMetricsCategory() {
-        return MetricsLogger.OWLSNEST;
+        return MetricsLogger.THE_WOLF;
     }
 
     private static final String TAG = "RecentPanelSettings";

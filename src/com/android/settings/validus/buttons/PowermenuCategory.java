@@ -43,7 +43,7 @@ public class PowermenuCategory extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.validus_powermenu);
+        addPreferencesFromResource(R.xml.gz_powermenu);
 
     }
 

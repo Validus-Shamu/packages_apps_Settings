@@ -63,7 +63,7 @@ public class VolumeCategory extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.validus_volume);
+        addPreferencesFromResource(R.xml.gz_volume);
         ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
 

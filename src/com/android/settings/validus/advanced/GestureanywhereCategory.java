@@ -43,7 +43,7 @@ public class GestureanywhereCategory extends SettingsPreferenceFragment implemen
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.validus_gestureanywhere);
+        addPreferencesFromResource(R.xml.gz_gestureanywhere);
 
     }
 

@@ -36,7 +36,7 @@ public class AdvancedSettings extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.OWLSNEST;
+        return MetricsLogger.THE_WOLF;
     }
 
     @Override

@@ -78,7 +78,7 @@ public class NavigationButtonsCategory extends SettingsPreferenceFragment implem
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.validus_navigationbuttons);
+        addPreferencesFromResource(R.xml.gz_navigationbuttons);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
 

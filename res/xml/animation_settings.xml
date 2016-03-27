@@ -22,7 +22,7 @@
     <PreferenceScreen
         android:key="aokp_animation"
         android:title="@string/system_animation_title"
-        android:fragment="com.android.settings.aosip.advanced.AnimationControls" />
+        android:fragment="com.android.settings.validus.advanced.AnimationControls" />
 
     <ListPreference
         android:key="toast_animation"

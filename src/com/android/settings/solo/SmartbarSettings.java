@@ -173,6 +173,6 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.OWLSNEST;
+        return MetricsLogger.THE_WOLF;
     }
 }

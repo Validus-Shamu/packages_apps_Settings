@@ -62,7 +62,7 @@
         android:entryValues="@array/quick_pulldown_values"
         android:persistent="false" />
 
-    <com.android.settings.aosip.seekbar.SeekBarPreference
+    <com.android.settings.validus.seekbar.SeekBarPreference
             android:key="qs_transparent_header"
             android:title="@string/qs_transparent_header"
             android:max="255"

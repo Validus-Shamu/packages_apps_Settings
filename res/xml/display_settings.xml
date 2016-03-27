@@ -108,7 +108,7 @@
 
         <PreferenceCategory
             android:key="dashboard_category"
-            android:title="@string/aosip_extras">
+            android:title="@string/validus_dash_settings">
 
        <ListPreference
                 android:key="dashboard_switches"

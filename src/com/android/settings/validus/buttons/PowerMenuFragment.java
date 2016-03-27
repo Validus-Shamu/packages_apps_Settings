@@ -34,7 +34,7 @@ import android.support.annotation.NonNull;
 import com.android.internal.util.cm.PowerMenuConstants;
 import static com.android.internal.util.cm.PowerMenuConstants.*;
 
-import com.android.settings.aosip.seekbar.SeekBarPreference;
+import com.android.settings.validus.seekbar.SeekBarPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;

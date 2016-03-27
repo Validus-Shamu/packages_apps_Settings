@@ -1290,7 +1290,6 @@ public final class Utils {
         }
         activity.setRequestedOrientation(frozenRotation);
     }
-}
 
     public static String getServiceStateString(int state, Resources res) {
         switch (state) {
@@ -1305,5 +1304,4 @@ public final class Utils {
                 return res.getString(R.string.radioInfo_unknown);
         }
     }
-
 }

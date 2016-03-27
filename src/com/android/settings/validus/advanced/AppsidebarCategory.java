@@ -43,7 +43,7 @@ public class AppsidebarCategory extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.validus_sidebar);
+        addPreferencesFromResource(R.xml.gz_sidebar);
 
     }
 

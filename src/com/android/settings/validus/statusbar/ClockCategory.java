@@ -105,7 +105,7 @@ public class ClockCategory extends SettingsPreferenceFragment implements
             prefs.removeAll();
         }
 
-        addPreferencesFromResource(R.xml.validus_clock);
+        addPreferencesFromResource(R.xml.gz_clock);
 
         mResolver = getActivity().getContentResolver();
 
@@ -397,7 +397,7 @@ public class ClockCategory extends SettingsPreferenceFragment implements
                             getOwner().refreshSettings();
                         }
                     })
-                    .setPositiveButton(R.string.dlg_reset_aosip,
+                    .setPositiveButton(R.string.dlg_reset_validus,
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             Settings.System.putInt(getOwner().mResolver,
