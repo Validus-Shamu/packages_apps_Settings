@@ -66,6 +66,11 @@
     <string name="validus_dash_settings">Dashboard</string>
     <string name="header_category_personalization">Personalization</string>
 
+    <!-- Changelog -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">See some of the recent commits.</string>
+    <string name="changelog_error">Unable to load changelog</string>
+
     <!--Wolvesden statusbar-->
     <string name="statusbar_bar_title">Statusbar options</string>
     <string name="statusbar_bar_summary">Adjust items like battery,clock,icons,and colors</string>
