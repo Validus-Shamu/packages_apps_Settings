@@ -66,6 +66,20 @@
     <string name="validus_dash_settings">Dashboard</string>
     <string name="header_category_personalization">Personalization</string>
 
+    <!-- UBER GCC version info -->
+    <string name="uber_android">GCC android</string>
+    <string name="uber_android_default">Unknown</string>
+    <string name="uber_kernel">GCC kernel</string>
+    <string name="uber_kernel_default">Unknown</string>
+
+    <!-- UBER GCC build flags info -->
+    <string name="uber_flags">Build flags</string>
+    <string name="uber_flags_default">None</string>
+
+    <!-- Clang version -->
+    <string name="dtc_version">Clang</string>
+    <string name="dtc_version_default">None</string>
+
     <!-- Changelog -->
     <string name="changelog_title">Changelog</string>
     <string name="changelog_summary">See some of the recent commits.</string>
