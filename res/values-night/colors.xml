@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="dashboard_category_background_color">#ff000000</color>
+    <color name="dashboard_background_color">#000000</color>
     <color name="lock_pattern_view_regular_color">@*android:color/secondary_text_default_material_dark</color>
 
     <color name="floating_action_button_touch_tint">#80009688</color>
