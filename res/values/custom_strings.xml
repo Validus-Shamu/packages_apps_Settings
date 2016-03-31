@@ -1055,4 +1055,8 @@
     <string name="lcd_density_unsupported">Unsupported</string>
     <string name="lcd_density_restarting_ui">Restarting UI\u2026</string>
 
+    <!-- Device specific settings Slim & CM -->
+    <string name="screen_off_gesture_settings_title">Screen off gestures</string>
+    <string name="gesture_settings_title">Screen off gestures</string>
+
 </resources>
