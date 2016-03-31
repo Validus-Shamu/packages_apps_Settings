@@ -160,8 +160,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 PROPERTY_UBER_KERNEL);
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_UBER_FLAGS,
                 PROPERTY_UBER_FLAGS);
-        removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_DTC_VERSION,
-                PROPERTY_DTC_VERSION);
+        //removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_DTC_VERSION,
+          //      PROPERTY_DTC_VERSION);
 
         // Remove Equipment id preference if FCC ID is not set by RIL
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_EQUIPMENT_ID,
