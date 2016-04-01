@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="dashboard_category_background_color">#ff000000</color>
+    <color name="dashboard_background_color">#000000</color>
     <color name="lock_pattern_view_regular_color">@*android:color/secondary_text_default_material_dark</color>
 
     <color name="floating_action_button_touch_tint">#80009688</color>
@@ -26,8 +27,6 @@
     </color>
     <color name="text_color_translucent_white">#B3FFFFFF</color>
     <color name="text_color_white">@android:color/white</color>
-    <!-- Dashboard background color -->
-    <color name="dashboard_category_background_color">@android:color/white</color>
     <!-- Data usage chart color -->
     <color name="data_usage_stroke_color">#00000000</color>
     <color name="data_usage_fill_color">#ff009688</color>
