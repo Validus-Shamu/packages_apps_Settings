@@ -146,17 +146,6 @@
                    android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
          </dashboard-tile>
 
-         <!-- Slim DeviceHandler Device specific Gestures -->
-         <dashboard-tile
-                android:id="@+id/device_specific_gesture_settings"
-                android:title="@string/screen_off_gesture_settings_title"
-                android:icon="@drawable/ic_settings_home">
-                <intent
-                    android:action="com.slim.action.LAUNCH_SCREEN_OFF_GESTURE_SETTINGS"
-                    android:targetPackage="com.slim.device"
-                    android:targetClass="com.slim.device.settings.ScreenOffGestureSettings" />
-         </dashboard-tile>
-
         </dashboard-category>
 
         <!-- DEVICE -->
