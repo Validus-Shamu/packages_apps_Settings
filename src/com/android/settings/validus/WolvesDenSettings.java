@@ -30,9 +30,12 @@ import android.preference.SwitchPreference;
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 
 public class WolvesDenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private PreferenceScreen button_settings;
 
     @Override
     protected int getMetricsCategory() {
@@ -45,6 +48,17 @@ public class WolvesDenSettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.wolvesden);
 
+        PreferenceScreen prefSet = getPreferenceScreen();
+
+        // look for hwkeys
+        button_settings = (PreferenceScreen) findPreference("button_settings");
+
+        boolean showHwKeys = getResources().getBoolean(
+                com.android.internal.R.bool.config_showHwKeys);
+                
+        if(!showHwKeys) {
+        	prefSet.removePreference(button_settings);
+        }
     }
 
     @Override
