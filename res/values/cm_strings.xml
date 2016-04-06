@@ -63,7 +63,8 @@
     <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
     <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
 
-    <string name="button_pref_title">Buttons</string>
+    <string name="hwkey_pref_title">Hw nav keys</string>
+    <string name="hwkey_pref_summary">Hardware navigation keys options</string>
     <string name="hardware_keys_home_key_title">Home button</string>
     <string name="hardware_keys_menu_key_title">Menu button</string>
     <string name="hardware_keys_short_press_title">Short press action</string>
