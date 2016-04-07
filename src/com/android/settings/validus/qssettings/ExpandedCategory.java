@@ -44,7 +44,7 @@ import android.os.UserHandle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.SystemProperties;
-import android.preference.CheckBoxPreference;
+import android.preference.SwitchPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceClickListener;
@@ -53,7 +53,6 @@ import android.preference.PreferenceCategory;
 import android.preference.SwitchPreference;
 import android.provider.SearchIndexableResource;
 import android.preference.Preference;
-import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
@@ -94,12 +93,13 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
     private static final String DEFAULT_WEATHER_ICON_PACKAGE = "org.omnirom.omnijaws";
     private static final String WEATHER_SERVICE_PACKAGE = "org.omnirom.omnijaws";
     private static final String LOCK_CLOCK_PACKAGE="com.cyanogenmod.lockclock";
+    private static final String CUSTOM_HEADER_IMAGE_SHADOW = "status_bar_custom_header_shadow";
 
     private ListPreference mDaylightHeaderPack;
-    private CheckBoxPreference mCustomHeaderImage;
+    private SwitchPreference mCustomHeaderImage;
     private PreferenceCategory mWeatherCategory;
     private ListPreference mWeatherIconPack;
-    private CheckBoxPreference mHeaderWeather;
+    private SwitchPreference mHeaderWeather;
 
     private ListPreference mQuickPulldown;
     private SeekBarPreference mQSHeaderAlpha; 
@@ -136,6 +136,13 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
             mWeatherIconPack.setEntries(entries.toArray(new String[entries.size()]));
             mWeatherIconPack.setEntryValues(values.toArray(new String[values.size()]));
 
+            // header image shadows
+            mHeaderShadow = (SeekBarPreference) findPreference(CUSTOM_HEADER_IMAGE_SHADOW);
+            final int headerShadow = Settings.System.getInt(getContentResolver(),
+                    Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, 0);
+            mHeaderShadow.setValue((int)((headerShadow / 255) * 100));
+            mHeaderShadow.setOnPreferenceChangeListener(this);
+
             int valueIndex = mWeatherIconPack.findIndexOfValue(settingHeaderPackage);
             if (valueIndex == -1) {
                 // no longer found
@@ -148,12 +155,12 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
             mWeatherIconPack.setSummary(mWeatherIconPack.getEntry());
             mWeatherIconPack.setOnPreferenceChangeListener(this);
 
-            mHeaderWeather = (CheckBoxPreference) findPreference(STATUS_BAR_HEADER_WEATHER);
+            mHeaderWeather = (SwitchPreference) findPreference(STATUS_BAR_HEADER_WEATHER);
         }
 
         final boolean customHeaderImage = Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_CUSTOM_HEADER, 0) == 1;
-        mCustomHeaderImage = (CheckBoxPreference) findPreference(CUSTOM_HEADER_IMAGE);
+        mCustomHeaderImage = (SwitchPreference) findPreference(CUSTOM_HEADER_IMAGE);
         mCustomHeaderImage.setChecked(customHeaderImage);
 
         String settingHeaderPackage = Settings.System.getString(getContentResolver(),
@@ -214,7 +221,7 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mCustomHeaderImage) {
-            final boolean value = ((CheckBoxPreference)preference).isChecked();
+            final boolean value = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_CUSTOM_HEADER, value ? 1 : 0);
             mDaylightHeaderPack.setEnabled(value);
@@ -245,6 +252,12 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
                     Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
                     statusQuickPulldown);
             updateQuickPulldownSummary(statusQuickPulldown);
+            return true;
+         } else if (preference == mHeaderShadow) {
+            Integer headerShadow = (Integer) newValue;
+            int realHeaderValue = (int) (((double) headerShadow / 100) * 255);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, realHeaderValue);
             return true;
         } else if (preference == mQSHeaderAlpha) {
                 int alpha = (Integer) newValue;
