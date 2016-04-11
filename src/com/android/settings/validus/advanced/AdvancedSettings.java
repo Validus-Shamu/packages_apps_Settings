@@ -33,6 +33,8 @@ import com.android.settings.SettingsPreferenceFragment;
 
 public class AdvancedSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+    private static final String KEY_LOCK_CLOCK =
+            "lock_clock";
 
     @Override
     protected int getMetricsCategory() {
@@ -45,6 +47,10 @@ public class AdvancedSettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.validus_advanced);
 
+        // Remove the lock clock preference if its not installed
+        if (!isPackageInstalled("com.cyanogenmod.lockclock")) {
+            removePreference(KEY_LOCK_CLOCK);
+        }
     }
 
     @Override
@@ -54,5 +60,17 @@ public class AdvancedSettings extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         return false;
+    }
+
+    private boolean isPackageInstalled(String packageName) {
+        PackageManager pm = getPackageManager();
+        boolean installed = false;
+        try {
+           pm.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
+           installed = true;
+        } catch (PackageManager.NameNotFoundException e) {
+           installed = false;
+        }
+        return installed;
     }
 }
