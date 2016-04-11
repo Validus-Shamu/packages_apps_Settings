@@ -103,6 +103,7 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
 
     private ListPreference mQuickPulldown;
     private SeekBarPreference mQSHeaderAlpha; 
+    private SeekBarPreference mHeaderShadow;    
 
     private final Configuration mCurConfig = new Configuration();
 
