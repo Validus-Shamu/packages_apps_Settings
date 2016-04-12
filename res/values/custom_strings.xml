@@ -91,6 +91,12 @@
     <string name="changelog_summary">See some of the recent commits.</string>
     <string name="changelog_error">Unable to load changelog</string>
 
+    <!-- About Validus -->
+    <string name="validus_menu_about">About Validus</string>
+
+    <!-- ValidusOTA -->
+    <string name="slimota_title">Validus Updates</string>
+
     <!--Wolvesden statusbar-->
     <string name="statusbar_bar_title">Statusbar options</string>
     <string name="statusbar_bar_summary">Adjust items like battery,clock,icons,and colors</string>
