@@ -28,6 +28,11 @@
                 android:summary="@string/validus_version_default"
 		android:icon="@drawable/ic_wolf" />
 
+        <PreferenceScreen
+               android:key="about_validus"
+               android:fragment="com.android.settings.validus.ValidusAbout"
+               android:title="@string/validus_menu_about" />
+
         <!-- Changelog -->
         <PreferenceScreen 
                 android:key="changelog"
