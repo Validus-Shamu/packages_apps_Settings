@@ -92,6 +92,13 @@
         android:id="@+id/personalization_section"
         android:title="@string/header_category_personalization" >
 
+        <dashboard-tile
+                android:id="@+id/button_settings"
+                android:title="@string/button_pref_title"
+                android:fragment="com.android.settings.ButtonSettings"
+                android:icon="@drawable/ic_settings_home"
+                />
+
         <!-- The Wolves Den-->
         <dashboard-tile
                 android:id="@+id/wolvesden_settings"
