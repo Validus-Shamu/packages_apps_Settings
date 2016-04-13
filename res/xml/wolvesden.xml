@@ -28,13 +28,6 @@
        android:title="@string/buttons_title" 
        android:summary="@string/buttons_summary" />
 
-    <!-- HW keys, device specific -->
-    <PreferenceScreen
-       android:key="button_settings"
-       android:title="@string/hwkey_pref_title"
-       android:fragment="com.android.settings.ButtonSettings"
-       android:summary="@string/hwkey_pref_summary" />
-
     <PreferenceScreen
        android:key="recent"
        android:fragment="com.android.settings.validus.recent.RecentHolder"
