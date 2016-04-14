@@ -94,6 +94,7 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
     private static final String WEATHER_SERVICE_PACKAGE = "org.omnirom.omnijaws";
     private static final String LOCK_CLOCK_PACKAGE="com.cyanogenmod.lockclock";
     private static final String CUSTOM_HEADER_IMAGE_SHADOW = "status_bar_custom_header_shadow";
+    private static final String ENABLE_TASK_MANAGER = "enable_task_manager";
 
     private ListPreference mDaylightHeaderPack;
     private SwitchPreference mCustomHeaderImage;
@@ -103,6 +104,8 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
 
     private ListPreference mQuickPulldown;
     private SeekBarPreference mQSHeaderAlpha; 
+    private SeekBarPreference mHeaderShadow;    
+    private SwitchPreference mEnableTaskManager;
 
     private final Configuration mCurConfig = new Configuration();
 
@@ -142,6 +145,9 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
                     Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, 0);
             mHeaderShadow.setValue((int)((headerShadow / 255) * 100));
             mHeaderShadow.setOnPreferenceChangeListener(this);
+
+        mEnableTaskManager = (SwitchPreference) findPreference(ENABLE_TASK_MANAGER);        mEnableTaskManager.setChecked((Settings.System.getInt(resolver,
+                Settings.System.ENABLE_TASK_MANAGER, 0) == 1));
 
             int valueIndex = mWeatherIconPack.findIndexOfValue(settingHeaderPackage);
             if (valueIndex == -1) {
@@ -264,6 +270,11 @@ public class ExpandedCategory extends SettingsPreferenceFragment implements
                 Settings.System.putInt(getActivity().getContentResolver(),
                         Settings.System.QS_TRANSPARENT_HEADER, alpha * 1);
                 return true;
+        } else if  (preference == mEnableTaskManager) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.ENABLE_TASK_MANAGER, checked ? 1:0);
+            return true;
         }
          return false;
 }
