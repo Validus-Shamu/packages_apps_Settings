@@ -35,6 +35,12 @@
         android:title="@string/gestureanywhere_category"
         android:fragment="com.android.settings.benzo.gestureanywhere.GestureAnywhereSettings" />
 
+    <PreferenceScreen
+        android:key="multitwindow"
+        android:fragment="com.android.settings.validus.advanced.MultiWindow"
+        android:title="@string/multiwindow_settings_title" 
+            />
+
     <PreferenceCategory
         android:key="more_cat_lock_clock"
         android:title="@string/lock_clock_title">
@@ -78,12 +84,6 @@
             </intent>
         </PreferenceScreen>
     </PreferenceCategory>
-
-         <PreferenceScreen
-            android:key="multitwindow"
-            android:fragment="com.android.settings.validus.advanced.MultiWindow"
-            android:title="@string/multiwindow_settings_title" 
-            />
 
 </PreferenceScreen>
 
