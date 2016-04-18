@@ -48,6 +48,9 @@ import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 
+import com.android.settings.slim.HardwareKeysSettings;
+import android.widget.Toast;
+
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.utils.du.ActionConstants;
@@ -74,6 +77,8 @@ public class NavigationButtonsCategory extends SettingsPreferenceFragment implem
     private PreferenceCategory mNavInterface;
     private PreferenceCategory mNavGeneral;
     private PreferenceScreen mSmartbarSettings;
+
+    Toast mNavbarVisibilityToast;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -135,12 +140,43 @@ public class NavigationButtonsCategory extends SettingsPreferenceFragment implem
             return true;
         } else if (preference.equals(mNavbarVisibility)) {
             boolean showing = ((Boolean)newValue);
+	    // Prema Chand Alugu (premaca@gmail.com)
+	    // We need to make sure the Navigation Bar presence if we are
+	    // disabling Hardware Keys. At least one of them should be present
+	    // for the device operation.
+	    // Not checking Overlay for Hardware Keys, because I assume if we
+	    // can do disable Navigation Bar, then Hardware Keys should
+	    // have been present on the device.
+	    // The devices having Navigation Keys only should not be able to
+	    // disable Navigation Bar.
+	    // In either of the cases, overlay for Hardware Keys is not
+	    // necessary
+	    boolean disableHardwareKeys = Settings.System.getInt(getContentResolver(),
+			    Settings.System.DISABLE_HARDWARE_KEYS, 0) == 1;
+	    if ((disableHardwareKeys) && (!showing)) {
+		    // check only while disabling the Navbar
+                    if (mNavbarVisibilityToast != null) {
+                        mNavbarVisibilityToast.cancel();
+                    }
+		    mNavbarVisibilityToast = Toast.makeText(getActivity(), 
+				    "Make sure Hardware Keys present",
+				    Toast.LENGTH_LONG);
+		    mNavbarVisibilityToast.show();
+	    	return false;
+	    }
+
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.NAVIGATION_BAR_VISIBLE,
                     showing ? 1 : 0);
             updateBarVisibleAndUpdatePrefs(showing);
             return true;
         }
         return false;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mNavbarVisibilityToast = null;
     }
 
     @Override
