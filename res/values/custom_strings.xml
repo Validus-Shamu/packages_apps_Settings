@@ -1073,9 +1073,6 @@
     <string name="lcd_density_unsupported">Unsupported</string>
     <string name="lcd_density_restarting_ui">Restarting UI\u2026</string>
 
-    <!-- Device specific settings Slim & CM -->
-    <string name="screen_off_gesture_settings_title">Screen off gestures</string>
-    <string name="gesture_settings_title">Screen off gestures</string>
 
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Show CPU info</string>
@@ -1095,5 +1092,4 @@
     <!-- Task Manager -->
     <string name="enable_task_manager_title">Task Manager</string>
     <string name="enable_task_manager_summary">Enable/Disable action for the task manager button in the expanded statusbar area</string>
-
 </resources>
