@@ -1023,7 +1023,7 @@
 
     <!-- Pulse navigation bar music visualizer -->
     <string name="pulse_help_policy_notice_title">About Pulse</string>
-    <string name="pulse_help_policy_notice_summary">Pulse is brilliant equalizer bar style audio visualization on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
+    <string name="pulse_help_policy_notice_summary">Pulse is brilliant equalizer bar style audio visualization on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker. Be Sure To Play/Pause Track again After Resetting Pulse Dimension.</string>
     <string name="pulse_settings">Pulse</string>
     <string name="pulse_settings_summary">Navigation bar audio visualization</string>
     <string name="fling_show_pulse_title">Show Pulse</string>
@@ -1031,6 +1031,59 @@
     <string name="fling_pulse_color">Pulse color</string>
     <string name="eos_fling_lavalamp_title">Turn on Lava Lamp</string>
     <string name="eos_fling_lavalamp_summary">Pulse animates a smooth lava lamp style color blend</string>
+    <string name="pulse_custom_dimen">Pulse Bar Width</string>
+    <string name="pulse_dimen0">Default</string>
+    <string name="pulse_dimen1">7dp</string>
+    <string name="pulse_dimen2">8dp</string>
+    <string name="pulse_dimen3">9dp</string>
+    <string name="pulse_dimen4">10dp</string>
+    <string name="pulse_dimen5">11dp</string>
+    <string name="pulse_dimen6">12dp</string>
+    <string name="pulse_dimen7">13dp</string>
+    <string name="pulse_dimen8">15dp</string>
+    <string name="pulse_dimen9">16dp</string>
+    <string name="pulse_dimen10">17dp</string>
+    <string name="pulse_dimen11">18dp</string>
+    <string name="pulse_dimen12">19dp</string>
+    <string name="pulse_dimen13">20dp</string>
+    <string name="pulse_dimen14">21dp</string>
+    <string name="pulse_dimen15">22dp</string>
+    <string name="pulse_dimen16">23dp</string>
+    <string name="pulse_dimen17">24dp</string>
+    <string name="pulse_dimen18">25dp</string>
+    <string name="pulse_dimen19">26dp</string>
+
+    <string name="pulse_custom_div">Pulse Bar Spacing</string>
+    <string name="default_div">Default</string>
+    <string name="div1">18</string>
+    <string name="div2">20</string>
+    <string name="div3">22</string>
+    <string name="div4">24</string>
+    <string name="div5">26</string>
+    <string name="div6">28</string>
+    <string name="div7">30</string>
+    <string name="div8">32</string>
+
+    <string name="default_fill">4dp(default)</string>
+    <string name="pulse_bar_style">Pulse Bar Style</string>
+    <string name="default_pulse_empty">1dp(default)</string>	
+    <string name="pulse_filled_block_size">Block Size</string>
+    <string name="pulse_empty_block_size">Block Spacing</string>
+    <string name="pulse_fill1">5dp</string>
+    <string name="pulse_fill2">6dp</string>
+    <string name="pulse_fill3">7dp</string>
+    <string name="pulse_fill4">8dp</string>
+    <string name="pulse_empty1">2dp</string>
+    <string name="pulse_empty2">3dp</string>
+    <string name="pulse_empty3">4dp</string>
+    <string name="pulse_empty4">0(no spacing)</string>
+  
+    <string name="factor0">Normal</string>
+    <string name="factor1">Relaxed</string>
+    <string name="factor2">Slow</string>
+    <string name="factor3">Hyper</string>
+    <string name="factor4">Insane</string>
+    <string name="pulse_custom_fudge_factor">Visualizer Sanity Level</string>
 
     <!-- Blacklist preferences -->
     <string name="app_security_title">Privacy</string>
@@ -1094,6 +1147,7 @@
     <string name="enable_task_manager_title">Task Manager</string>
     <string name="enable_task_manager_summary">Enable/Disable action for the task manager button in the expanded statusbar area</string>
 
+    <string name="color_picker_label">Color Picker</string>
     <string name="navbar_tint_switch">Navigation Button Tint</string>
     <string name="navbar_button_color">Navigation Bar Buttons</string>
 </resources>
