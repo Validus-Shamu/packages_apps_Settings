@@ -1154,4 +1154,7 @@
     <string name="lock_screen_show_current">Charging Current</string>
     <string name="lock_screen_show_current_summary">Show Charging Current rate on lock screen</string>
 
+    <string name="status_bar_theme_header_title">CMTE header enabler</string>	
+    <string name="status_bar_theme_header_summary">Enable installed CMTE headers.</string>
+
 </resources>
