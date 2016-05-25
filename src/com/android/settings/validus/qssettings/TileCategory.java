@@ -125,14 +125,14 @@ public class TileCategory extends SettingsPreferenceFragment implements
                         Settings.System.QS_TRANSPARENT_SHADE, alpha * 1);
                 return true;
         } else if (preference == mTileAnimationStyle) {
-            int tileAnimationStyle = Integer.valueOf((String) objValue);
+            int tileAnimationStyle = Integer.valueOf((String) newValue);
             Settings.System.putIntForUser(getContentResolver(), Settings.System.ANIM_TILE_STYLE,
                     tileAnimationStyle, UserHandle.USER_CURRENT);
             updateTileAnimationStyleSummary(tileAnimationStyle);
             updateAnimTileDuration(tileAnimationStyle);
             return true;
         } else if (preference == mTileAnimationDuration) {
-            int tileAnimationDuration = Integer.valueOf((String) objValue);
+            int tileAnimationDuration = Integer.valueOf((String) newValue);
             Settings.System.putIntForUser(getContentResolver(), Settings.System.ANIM_TILE_DURATION,
                     tileAnimationDuration, UserHandle.USER_CURRENT);
             updateTileAnimationDurationSummary(tileAnimationDuration);
