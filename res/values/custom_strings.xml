@@ -1173,4 +1173,8 @@
     <string name="equalizer_settings_title">Equalizer</string>
     <string name="kernel_settings_title">Kernel</string>
 
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
+    <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
+
 </resources>
