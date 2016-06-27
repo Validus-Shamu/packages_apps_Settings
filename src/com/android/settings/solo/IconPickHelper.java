@@ -21,7 +21,7 @@ package com.android.settings.solo;
 
 import java.io.File;
 
-import com.android.internal.utils.du.ImageHelper;
+import com.android.internal.util.du.ImageHelper;
 
 import android.app.Activity;
 import android.app.Fragment;
