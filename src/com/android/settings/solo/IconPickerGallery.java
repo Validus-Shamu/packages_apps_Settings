@@ -19,7 +19,7 @@ package com.android.settings.solo;
 
 import java.io.File;
 
-import com.android.internal.util.du.ImageHelper;
+import com.android.internal.utils.du.ImageHelper;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -29,6 +29,8 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.UserHandle;
 import android.widget.Toast;
+
+import com.android.settings.R;
 
 /**
  * So we can capture image selection in DUSystemReceiver

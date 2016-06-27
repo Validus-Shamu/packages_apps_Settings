@@ -21,7 +21,7 @@ package com.android.settings.solo;
 
 import java.io.File;
 
-import com.android.internal.util.du.ImageHelper;
+import com.android.internal.utils.du.ImageHelper;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -31,6 +31,8 @@ import android.net.Uri;
 import android.os.Environment;
 import android.util.Log;
 import android.widget.Toast;
+
+import com.android.settings.R;
 
 public class IconPickHelper {
     private static final String TAG = "IconPickHelper";
