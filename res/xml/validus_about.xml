@@ -54,6 +54,10 @@
 	    <Preference
 	        android:title="Martin Coulon (martinusbe)"
 	            android:summary="Oneplus -One/-Two/-X maintainer" />
+
+	     <Preference
+	        android:title="Prema Chand Alugu (premaca)"
+	            android:summary="Redmi 2 (wt88047) maintainer" />
 	            
 	    </PreferenceCategory>       
 </PreferenceScreen>
