@@ -110,6 +110,12 @@
                 android:summary="@string/tap_to_wake_summary"
                 android:persistent="false" />
 
+	<com.android.settings.preference.SystemSettingSwitchPreference
+                android:key="proximity_on_wake"
+                android:title="@string/proximity_wake_title"
+                android:summary="@string/proximity_wake_summary"
+                android:defaultValue="false" />
+
         <PreferenceCategory
             android:key="dashboard_category"
             android:title="@string/validus_dash_settings">
@@ -195,12 +201,6 @@
                android:title="@string/double_tap_to_sleep_title"
                android:summary="@string/double_tap_to_sleep_summary"
                android:defaultValue="false" />
-
-            <com.android.settings.tesla.SystemSettingSwitchPreference
-                android:key="proximity_on_wake"
-                android:title="@string/proximity_wake_title"
-                android:summary="@string/proximity_wake_summary"
-                android:defaultValue="false" />
 
          </PreferenceCategory>
 
