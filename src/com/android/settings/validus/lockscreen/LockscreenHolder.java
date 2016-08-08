@@ -139,8 +139,8 @@ public class LockscreenHolder extends SettingsPreferenceFragment {
                     getString(R.string.weather_category),
                     getString(R.string.shortcut_category),
                     getString(R.string.lockscreen_wallpaper_title),
-                    getString(R.string.lockcolors_category)};
                     getString(R.string.lock_screen_visualizer_settings_title),
+                    getString(R.string.lockcolors_category)};
         return titleString;
     }
 }
