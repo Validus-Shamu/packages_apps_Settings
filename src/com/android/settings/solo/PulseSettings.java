@@ -111,17 +111,17 @@ public class PulseSettings extends SettingsPreferenceFragment implements
         mCustomDiv.setValue(customdiv / 1);
         mCustomDiv.setOnPreferenceChangeListener(this);
         
-        int filled = Settings.System.getIntForUser(getContentResolver(),
-                Settings.Secure.PULSE_EMPTY_BLOCK_SIZE, 0, UserHandle.USER_CURRENT);
-        mEmpty = (SeekBarPreference) findPreference(EMPTY_BLOCK);
-        mEmpty.setValue(empty / 1);
+        int filled = Settings.Secure.getIntForUser(getContentResolver(),
+                Settings.Secure.PULSE_FILLED_BLOCK_SIZE, 0, UserHandle.USER_CURRENT);
+        mFilled = (SeekBarPreference) findPreference(PULSE_BLOCK);
+        mFilled.setValue(filled / 1);
         mFilled.setOnPreferenceChangeListener(this);
         
         int empty = Settings.System.getIntForUser(getContentResolver(),
-                    Settings.System.PULSE_EMPTY_BLOCK_SIZE, 0,
+                    Settings.Secure.PULSE_EMPTY_BLOCK_SIZE, 0,
                     UserHandle.USER_CURRENT);
-        mEmpty.setValue(String.valueOf(empty));
-        mEmpty.setSummary(mEmpty.getEntry());
+        mEmpty = (SeekBarPreference) findPreference(EMPTY_BLOCK);
+        mEmpty.setValue(empty / 1);
         mEmpty.setOnPreferenceChangeListener(this);
         
         int fudge = Settings.System.getIntForUser(getContentResolver(),
@@ -179,6 +179,7 @@ public class PulseSettings extends SettingsPreferenceFragment implements
                     Settings.Secure.FLING_PULSE_LAVALAMP_ENABLED, enabled ? 1 : 0,
                     UserHandle.USER_CURRENT);
             return true;
+        } else if (preference == mCustomDimen) {
             int val = (Integer) newValue;
             Settings.Secure.putIntForUser(getContentResolver(),
                     Settings.Secure.PULSE_CUSTOM_DIMEN, val * 1, UserHandle.USER_CURRENT);
