@@ -55,6 +55,7 @@ import com.android.settings.validus.lockscreen.WeatherCategory;
 import com.android.settings.validus.lockscreen.ShortcutCategory;
 import com.android.settings.validus.lockscreen.LockPaperCategory;
 import com.android.settings.validus.lockscreen.LockColorsCategory;
+import com.android.settings.validus.lockscreen.VisualizerCategory;
 import com.android.settings.validus.PagerSlidingTabStrip;
 
 import java.util.ArrayList;
@@ -113,6 +114,7 @@ public class LockscreenHolder extends SettingsPreferenceFragment {
             frags[1] = new ShortcutCategory();
             frags[2] = new LockPaperCategory();
             frags[3] = new LockColorsCategory();
+            frags[4] = new VisualizerCategory();
         }
 
         @Override
@@ -138,6 +140,7 @@ public class LockscreenHolder extends SettingsPreferenceFragment {
                     getString(R.string.shortcut_category),
                     getString(R.string.lockscreen_wallpaper_title),
                     getString(R.string.lockcolors_category)};
+                    getString(R.string.lock_screen_visualizer_settings_title),
         return titleString;
     }
 }
