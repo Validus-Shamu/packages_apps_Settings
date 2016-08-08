@@ -89,6 +89,11 @@
             settings:unitsLeft=""
             settings:unitsRight="px"
             android:persistent="false" />
+	</PreferenceCategory>
+
+	<PreferenceCategory
+            android:key="pulse_2"
+            android:title="@string/pulse_solid_dimen_category" >
 
         <com.android.settings.validus.seekbar.SeekBarPreference
             android:key="pulse_custom_fudge_factor"
